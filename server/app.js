@@ -14,7 +14,12 @@ const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
 const dbURL = process.env.MONGODB_URI || 'mongodb://localhost/simpleMVCExample';
 
-mongoose.connect(dbURL, (err) => {
+const mongooseOptions = {
+  useNewUrlParser: true, 
+  useUnifiedTopology: true,
+}
+
+mongoose.connect(dbURL, mongooseOptions, (err) => {
   if (err) {
     console.log('Could not connect to database');
     throw err;
@@ -31,7 +36,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-app.engine('handlebars', expressHandlebars());
+app.engine('handlebars', expressHandlebars({
+  defaultLayout: '',
+}));
 app.set('view engine', 'handlebars');
 app.set('views', `${__dirname}/../views`);
 
