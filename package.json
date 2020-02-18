@@ -16,12 +16,13 @@
   "author": "Cody Van De Mark",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^6.5.1",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "nodemon": "^1.19.4"
+    "eslint-plugin-import": "^2.20.1",
+    "nodemon": "^2.0.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -29,7 +30,7 @@
     "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "mongoose": "^5.7.5",
+    "mongoose": "^5.9.1",
     "serve-favicon": "^2.5.0"
   }
 }
