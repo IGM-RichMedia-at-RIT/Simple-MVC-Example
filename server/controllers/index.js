@@ -46,7 +46,7 @@ const setName = (req, res) => {
 
 const searchName = (req, res) => {
   if (!req.query.name) {
-    return res.json({ error: 'Name is required to perform a search' });
+    return res.status(400).json({ error: 'Name is required to perform a search' });
   }
 };
 
