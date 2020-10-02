@@ -17,6 +17,7 @@ const dbURL = process.env.MONGODB_URI || 'mongodb://localhost/simpleMVCExample';
 const mongooseOptions = {
   useNewUrlParser: true, 
   useUnifiedTopology: true,
+  useCreateIndex: true,
 }
 
 mongoose.connect(dbURL, mongooseOptions, (err) => {
