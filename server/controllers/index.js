@@ -13,7 +13,7 @@ const hostIndex = (req, res) => {
   res.render('index', {
     currentName: 'Placeholder',
     title: 'Home',
-    pageName: 'Home Page';
+    pageName: 'Home Page'
   });
 };
 
