@@ -17,10 +17,6 @@ const hostIndex = (req, res) => {
   });
 };
 
-const readCat = (req, res) => {
- 
-};
-
 const hostPage1 = (req, res) => {
 
 };
@@ -65,7 +61,6 @@ module.exports = {
   page1: hostPage1,
   page2: hostPage2,
   page3: hostPage3,
-  readCat,
   getName,
   setName,
   updateLast,
