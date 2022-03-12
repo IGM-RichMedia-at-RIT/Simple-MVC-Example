@@ -10,11 +10,11 @@ const defaultData = {
 let lastAdded;
 
 const hostIndex = (req, res) => {
-
-};
-
-const readAllCats = (req, res, callback) => {
-
+  res.render('index', {
+    currentName: 'Placeholder',
+    title: 'Home',
+    pageName: 'Home Page';
+  });
 };
 
 const readCat = (req, res) => {
