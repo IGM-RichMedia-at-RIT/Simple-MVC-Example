@@ -29,7 +29,7 @@ const getName = (req, res) => {
 
 const setName = (req, res) => {
   if (!req.body.firstname || !req.body.lastname || !req.body.beds) {
-    return res.status(400).json({ error: 'firstname,lastname and beds are all required' });
+    return res.status(400).json({ error: 'firstname, lastname and beds are all required' });
   }
   
 };
