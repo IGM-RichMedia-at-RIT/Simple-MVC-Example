@@ -2,8 +2,10 @@
 const models = require('../models');
 
 const hostIndex = (req, res) => {
+  let name = 'unknown';
+
   res.render('index', {
-    currentName: 'unknown',
+    currentName: name,
     title: 'Home',
     pageName: 'Home Page'
   });
