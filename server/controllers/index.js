@@ -1,17 +1,9 @@
 // pull in our models. This will automatically load the index.js from that folder
 const models = require('../models');
 
-// default fake data so that we have something to work with until we make a real Cat
-const defaultData = {
-  name: 'unknown',
-  bedsOwned: 0,
-};
-
-let lastAdded;
-
 const hostIndex = (req, res) => {
   res.render('index', {
-    currentName: 'Placeholder',
+    currentName: 'unknown',
     title: 'Home',
     pageName: 'Home Page'
   });
