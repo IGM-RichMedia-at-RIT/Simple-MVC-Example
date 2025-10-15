@@ -9,7 +9,7 @@ const router = (app) => {
 
   app.get('/', controllers.index);
 
-  app.get('/*', controllers.notFound);
+  app.get('/*wild', controllers.notFound);
 
   app.post('/setName', controllers.setName);
 
