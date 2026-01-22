@@ -12,9 +12,7 @@
   "author": "Cody Van De Mark / Austin Willoughby",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.57.1",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.32.0",
+    "eslint": "^9.39.2",
     "nodemon": "^3.1.10"
   },
   "dependencies": {
